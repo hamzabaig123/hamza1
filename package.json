@@ -1,0 +1,36 @@
+{
+  "name": "my-app",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run index.ts",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.17"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@google/genai": "^1.24.0",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.552.0",
+    "openai": "^6.3.0",
+    "openai-agent": "^1.6.0"
+  }
+}
