@@ -1,4 +1,4 @@
-# my-app
+# server
 
 To install dependencies:
 

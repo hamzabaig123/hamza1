@@ -1,36 +1,26 @@
 {
-  "name": "my-app",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "bun run index.ts",
-    "format": "prettier --write .",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/bun": "latest",
-    "autoprefixer": "^10.4.21",
-    "concurrently": "^9.2.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.3",
-    "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
-    "tailwindcss": "^4.1.17"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {
-    "@google/genai": "^1.24.0",
-    "canvas-confetti": "^1.9.4",
-    "framer-motion": "^12.23.24",
-    "lucide-react": "^0.552.0",
-    "openai": "^6.3.0",
-    "openai-agent": "^1.6.0"
-  }
+   "name": "server",
+   "module": "index.ts",
+   "type": "module",
+   "private": true,
+   "scripts": {
+      "start": "bun run index.ts",
+      "dev": "bun --watch run index.ts"
+   },
+   "devDependencies": {
+      "@types/bun": "latest",
+      "@types/cors": "^2.8.19",
+      "@types/express": "^5.0.3"
+   },
+   "peerDependencies": {
+      "typescript": "^5"
+   },
+   "dependencies": {
+      "@google/genai": "^1.24.0",
+      "@openrouter/ai-sdk-provider": "^1.2.0",
+      "axios": "^1.13.2",
+      "dotenv": "^17.2.3",
+      "express": "^5.1.0",
+      "openai": "^6.1.0"
+   }
 }
